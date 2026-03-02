@@ -1,0 +1,33 @@
+.gray {
+  color: var(--color-text-dim);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-4xl);
+}
+
+.stepCard {
+  text-align: center;
+}
+
+.stepDesc {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+  }
+
+  .stepDesc {
+    font-size: 13px;
+  }
+}

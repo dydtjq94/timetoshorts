@@ -1,0 +1,183 @@
+/* Pricing-specific heading style */
+.pricingHeading h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.titleAccent {
+  color: var(--color-accent);
+}
+
+/* 3-column pricing cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: left;
+  position: relative;
+  transition: transform var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.popularCard {
+  background: rgba(255, 45, 120, 0.08);
+  border-color: var(--color-accent);
+}
+
+.popularBadgeWrap {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.planName {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-sm);
+}
+
+.planDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+  min-height: 48px;
+}
+
+.features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: var(--space-lg);
+}
+
+.feature {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.checkIcon {
+  color: var(--color-accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.priceTag {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.pinkPrice {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Gradient card (제작+배포형 & 기업형) */
+.gradientCard {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-accent-30);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4xl);
+  text-align: left;
+  max-width: var(--max-width-narrow);
+  margin: 0 auto;
+}
+
+.cardTitle {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+}
+
+.cardDesc {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.productionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.productionList li {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .pricingHeading h2 {
+    margin-bottom: var(--space-lg);
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .card {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .planName {
+    font-size: var(--text-sm);
+  }
+
+  .planDesc {
+    font-size: 11px;
+    margin-bottom: var(--space-sm);
+    min-height: auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature {
+    font-size: 11px;
+  }
+
+  .priceTag {
+    font-size: 11px;
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .gradientCard {
+    padding: var(--space-lg);
+  }
+
+  .cardTitle {
+    font-size: var(--text-lg);
+  }
+
+  .productionList li {
+    font-size: var(--text-sm);
+  }
+}

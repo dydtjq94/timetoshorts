@@ -1,0 +1,52 @@
+.wrap {
+  margin-bottom: var(--space-xl);
+}
+
+.heading {
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+/* Sizes */
+.md {
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+.lg {
+  font-size: clamp(32px, 5vw, 56px);
+}
+
+.xl {
+  font-size: clamp(48px, 8vw, 120px);
+}
+
+.subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+  margin-top: 2px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    margin-bottom: var(--space-md);
+  }
+
+  .md {
+    font-size: 20px;
+  }
+
+  .lg {
+    font-size: 22px;
+  }
+
+  .xl {
+    font-size: clamp(28px, 8vw, 32px);
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-top: var(--space-sm);
+  }
+}

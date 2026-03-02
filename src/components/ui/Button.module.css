@@ -1,0 +1,70 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+  cursor: pointer;
+}
+
+/* Sizes */
+.md {
+  padding: 12px var(--space-lg) 8px;
+  font-size: var(--text-base);
+}
+
+.lg {
+  padding: 16px var(--space-xl) 12px;
+  font-size: var(--text-lg);
+}
+
+/* Primary: 핑크 테두리 + 어두운 배경 */
+.primary {
+  background: var(--color-accent-08);
+  border: 1px solid var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+.primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+/* Secondary: 반투명 유리 */
+.secondary {
+  background: var(--color-bg-glass);
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-text-primary);
+}
+
+.secondary:hover {
+  background: var(--color-bg-glass-hover);
+}
+
+/* Ghost: 투명, 텍스트만 */
+.ghost {
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.ghost:hover {
+  background: var(--color-accent-08);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .md {
+    padding: 10px 16px 6px;
+    font-size: 14px;
+  }
+
+  .lg {
+    padding: 12px 20px 8px;
+    font-size: 15px;
+  }
+}

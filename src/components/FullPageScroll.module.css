@@ -1,0 +1,10 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  will-change: transform;
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}

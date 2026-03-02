@@ -1,0 +1,73 @@
+:root {
+  /* ==================== Colors ==================== */
+
+  /* Background */
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #222222;
+  --color-bg-card: #2a2a2a;
+  --color-bg-primary-blur: rgba(26, 26, 26, 0.95);
+
+  /* Accent */
+  --color-accent: #FF2D78;
+  --color-accent-dark: #cc1a5e;
+  --color-accent-50: rgba(255, 45, 120, 0.5);
+  --color-accent-30: rgba(255, 45, 120, 0.3);
+  --color-accent-08: rgba(255, 45, 120, 0.08);
+  --color-accent-02: rgba(255, 45, 120, 0.02);
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #999999;
+  --color-text-dim: #888888;
+
+  /* Border */
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-accent: rgba(255, 45, 120, 0.5);
+
+  /* Glass / Badge */
+  --color-bg-badge: rgba(255, 255, 255, 0.95);
+  --color-bg-glass: rgba(255, 255, 255, 0.1);
+  --color-bg-glass-hover: rgba(255, 255, 255, 0.15);
+
+  /* ==================== Spacing ==================== */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 48px;
+  --space-4xl: 60px;
+  --space-5xl: 80px;
+  --space-section: 120px;
+
+  /* ==================== Layout ==================== */
+  --nav-height: 72px;
+  --nav-height-mobile: 56px;
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+  --padding-x: 40px;
+  --padding-x-mobile: 20px;
+
+  /* ==================== Typography ==================== */
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 22px;
+
+  /* ==================== Border Radius ==================== */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+
+  /* ==================== Effects ==================== */
+  --shadow-accent: 0 8px 30px rgba(255, 45, 120, 0.3);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  --gradient-card: linear-gradient(135deg, var(--color-accent-08), var(--color-accent-02));
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

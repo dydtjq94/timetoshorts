@@ -1,0 +1,144 @@
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: clamp(24px, 3vw, 36px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-size: 15px;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-md) center;
+}
+
+.select option {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.textarea::placeholder {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.submitWrap {
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+/* Success state */
+.successMessage {
+  text-align: center;
+  padding: var(--space-section) 0;
+}
+
+.successTitle {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.successDesc {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .form {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .row3 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .submitWrap {
+    margin-top: var(--space-sm);
+  }
+
+  .successTitle {
+    font-size: 24px;
+  }
+
+  .successDesc {
+    font-size: var(--text-base);
+  }
+}

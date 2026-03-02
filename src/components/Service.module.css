@@ -1,0 +1,42 @@
+.desc {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.highlight {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: var(--space-lg);
+}
+
+.pointCard {
+  margin-top: var(--space-2xl);
+}
+
+.pointDesc {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .desc {
+    font-size: 14px;
+  }
+
+  .highlight {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .pointCard {
+    margin-top: 20px;
+  }
+
+  .pointDesc {
+    font-size: 14px;
+  }
+}

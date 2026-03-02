@@ -1,0 +1,23 @@
+.desc {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.question {
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+  font-weight: 700;
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .desc {
+    font-size: 14px;
+  }
+
+  .question {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}

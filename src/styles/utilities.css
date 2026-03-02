@@ -1,0 +1,12 @@
+/* Global utility classes */
+.accent {
+  color: var(--color-accent);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
